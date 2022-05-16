@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa calcular IMC</title>
+</head>
+<body>
+    <script>
+        function saltarLinea() {
+            document.write("<br><br><br>");
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+        
+        var intentos = 3;
+        var contador = 1;
+
+        while (contador <= intentos) { 
+
+        var numeroPensado = Math.round(Math.random()*10);
+        var numeroLanzado = parseInt(prompt("Ingrese un numero entre 0 y 10"));        
+    
+        if (numeroPensado == numeroLanzado) {
+            alert("Usted acertó en el intento N°: " + intentos + ". " + "El numero era: " + numeroPensado);
+            break;
+        }
+
+        else {
+            alert("Lo sentimos, usted no acertó");
+           
+            }
+        contador++;   }
+
+        if (numeroPensado == numeroLanzado) {
+            imprimir("Usted acertó en el intento N°: " + intentos + ". " + "El numero era: " + numeroPensado);
+        }
+
+        else {
+            imprimir("Usted no acertó! El numero era: " + numeroPensado);
+        }
+    </script>
+</body>
+</html>

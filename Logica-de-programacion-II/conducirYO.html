@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conducir</title>
+
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+        }
+    
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+    
+        var edad = parseInt(prompt("¿Cuál es tu edad?"));
+        if (edad < 18) {
+            imprimir("Lo sentimos, usted debe ser mayor de 18 años para obtener su licencia.");
+        }
+        else { 
+        var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+            if (tieneLicencia == "N" || "n" || "no" || "NO")  {
+                imprimir("Siga los pasos para iniciar el tramite.");
+            }
+        }      
+        
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

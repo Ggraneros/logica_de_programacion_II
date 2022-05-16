@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundiales YO</title>
+
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+        }
+    
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+    
+        var yearMundial = 1930
+        var yearActual = parseInt(prompt("Por favor, ingrese el año actual: "));
+       
+        while (yearMundial < 2022) {
+            imprimir("Hubo mundial en el año " + yearMundial)
+            yearMundial = yearMundial + 4;
+        }
+
+        if (yearActual = 2022) {
+            prompt("Este año hay mundial!");
+        }
+        alert("FIN!")
+        
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

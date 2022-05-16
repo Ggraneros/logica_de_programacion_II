@@ -1,0 +1,8 @@
+parseInt()
+Funcion para convertir un texto en numero.
+
+- El signo igual, es para atribucion de variables. Por este motivo, al indicar que un valor es igual a otr, se deben colocar 2 signos igual.
+	Ejemplo: puntosCampeonato == 28
+
+- Los resultados son Booleanos, es decir que son verdaderos o falsos, reunen una condicion o no.
+	Ejemplo: Si (puntos < a 8)

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicar</title>
+
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+        }
+    
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+        
+        imprimir("Esto es WHILE");
+        
+        var multiplicador = 1
+        document.write("<br>")
+        while (multiplicador <= 10) {
+
+            imprimir(5 * multiplicador);
+            multiplicador++;
+        }
+
+        document.write("<br><br>")
+        
+        imprimir("Esto es FOR");
+        
+        
+        document.write("<br>")
+        for (var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+                imprimir(5 * multiplicador);
+        }
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

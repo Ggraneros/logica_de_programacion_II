@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <script>
+
+        var inicioDeSesionRegistrado = "alura";
+        var contrasenhaRegistrada = "alura321";
+    
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+        var maximoIntentos = 3;
+        var intentoActual = 1;
+
+        while ( intentoActual <= maximoIntentos) {
+            var inicioDeSesionIngresado = prompt("Por favor, ingrese su usuario.");
+            var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        }
+
+    
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            intentoActual = maximoIntentos;
+        } 
+
+        else {
+            if (intentoActual == 3) {
+                alert("Usted ha agotado los intentos. Por favor, comuniquese con el administrador.");
+            }
+            intentoActual++;
+        }
+        
+    </script>
+</body>
+</html>
